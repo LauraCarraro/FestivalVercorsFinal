@@ -1,5 +1,4 @@
 <?php
-define("MAX_RANGE", 200);
 define("PRIX_TENTE_VAN_1_NUIT", 5);
 define("PRIX_TENTE_VAN_3_NUITS", 12);
 
@@ -233,6 +232,11 @@ if (isset($_POST) && $_POST) {
 } ?>
 
 <!-- //Affichage récapitulatif réservation sous forme de liste -->
+<style>
+h2, ul, li {
+    font-family: Arial, Helvetica, sans-serif;
+}
+</style>
 
 <h2>Récapitulatif réservation</h2>
 <ul>
@@ -250,9 +254,6 @@ if (isset($_POST) && $_POST) {
     </li>
     <li>Adresse :
         <?php echo $adressePostale; ?>
-    </li>
-    <li> Prix total :
-        <?php echo $prixTotal; ?>
     </li>
     <li>Nombre de places :
         <?php echo $nombrePlaces; ?>
@@ -298,5 +299,9 @@ if (isset($_POST) && $_POST) {
     </li>
     <li>Luge été :
         <?php echo $nombreLugesEte; ?>
+    </li>
+    <br>
+    <li><b> Prix total : </b>
+        <?php echo $prixTotal; ?> €
     </li>
 </ul>

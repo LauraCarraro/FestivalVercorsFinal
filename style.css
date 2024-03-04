@@ -69,6 +69,10 @@ input[type="number"]{
     border-radius: 5px;
     cursor: pointer;
   }
+  #btnReserver {
+    width : 23%;
+    font-size: large;
+  }
   
   .bouton:hover {
     background-color: rgb(67, 124, 128);
